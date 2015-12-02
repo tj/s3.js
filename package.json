@@ -1,0 +1,25 @@
+{
+  "name": "s3.js",
+  "version": "1.0.0",
+  "description": "S3 upload from the browser with progress reporting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tj/s3.js.git"
+  },
+  "keywords": [
+    "s3",
+    "upload",
+    "progress",
+    "browser"
+  ],
+  "author": "TJ Holowaychuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tj/s3.js/issues"
+  },
+  "homepage": "https://github.com/tj/s3.js#readme"
+}
