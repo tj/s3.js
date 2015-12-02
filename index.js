@@ -3,14 +3,15 @@
  * Upload `file` with the following options:
  *
  * - `key` object key
- * - `acl` visibility [public-read]
+ * - `acl` visibility [default: public-read]
  * - `policy` s3 policy base64 encoded
  * - `signature` s3 computed signature
  * - `credential` s3 access key
- * - `algorithm` s3 signature algoritm used [AWS4-HMAC-SHA256]
+ * - `algorithm` s3 signature algoritm used [default: AWS4-HMAC-SHA256]
  * - `date` s3 date
  * - `action` s3 end-point
  * - `onprogress` progress callback
+ * - `type` content-type [default: file.type]
  */
 
 module.exports = function upload(file, options) {
