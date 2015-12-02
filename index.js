@@ -21,7 +21,7 @@ module.exports = function upload(file, options) {
   form.append('key', options.key)
   form.append('acl', options.acl || 'public-read')
   form.append('Policy', options.policy)
-  form.append('Content-Type', options.type || file.type || 'application/octet-stream')
+  if (options.type !== null) form.append('Content-Type', options.type || file.type || 'application/octet-stream')
   form.append('X-Amz-Credential', options.credential)
   form.append('X-Amz-Algorithm', options.algorithm || 'AWS4-HMAC-SHA256')
   form.append('X-Amz-Signature', options.signature)
